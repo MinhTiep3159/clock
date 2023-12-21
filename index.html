@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock" style="border: 1px solid black;border-radius: 10px;width: 200px;height: 50px;"></div>
+
+    <script src="./app.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Clock App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock" id="clock1">
+        <div class="time" id="time1">00:00</div>
+        <button onclick="startClock(1)">Start</button>
+        <button onclick="stopClock(1)">Stop</button>
+    </div>
+
+    <div class="clock" id="clock2">
+        <div class="time" id="time2">00:00</div>
+        <button onclick="startClock(2)">Start</button>
+        <button onclick="stopClock(2)">Stop</button>
+    </div>
+
+    <button onclick="stopAllClocks()">Stop All</button>
+
+    <script src="./app.js"></script>
+</body>
+</html>
